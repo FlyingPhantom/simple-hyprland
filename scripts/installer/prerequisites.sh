@@ -23,8 +23,6 @@ run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd
 
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
 
-run_command "yay -S --sudoloop --noconfirm brave-bin" "Install Brave Browser" "yes" "no" 
-
 run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm nano" "Install nano" "yes"
