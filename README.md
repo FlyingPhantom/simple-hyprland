@@ -3,9 +3,10 @@ Welcome to the Simple Hyprland Guide! This repository is designed to help users 
 
 By the end of this guide, you'll have a clean and functional Hyprland setup like this:
 
+## Note: zsh config and alacritty config have not been implemented yet.
+
 <img src="/assets/images/image1.png" alt="final-setup-01">
 <img src="/assets/images/image2.png" alt="final-setup-02">
-
 ## Purpose ✨
 This guide is intended for:
 
