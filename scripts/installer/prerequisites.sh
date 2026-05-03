@@ -23,7 +23,7 @@ run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd
 
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
 
-run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
+run_command "pacman -S --noconfirm alacritty" "Install Alacritty (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm nano" "Install nano" "yes"
 
