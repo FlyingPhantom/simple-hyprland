@@ -12,6 +12,12 @@ print_info "\nStarting utilities setup..."
 run_command "sudo pacman -S rofi --noconfirm" "Install Rofi - Application Launcher" "yes" "no"
 run_command "cp -r $BASE_DIR/configs/rofi /home/$SUDO_USER/.config/" "Copy Rofi config(s)" "yes" "no"
 
+run_command "sudo pacman -S zsh --noconfirm" "Install zsh - Customizable shell"
+run_command "sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" ""Neccesery for zsh config" "yes" "no"
+run_command "cp -r $BASE_DIR/configs/zsh "$HOME/"" "Install zsh config" "Highly recommended" "yes" "no"
+
+run_command "yay -S --sudoloop --noconfirm pfetch" "Install pfetch" "Neccesery if you used zsh with this config" "yes" "no"
+
 run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
 run_command "cp -r $BASE_DIR/configs/wlogout /home/$SUDO_USER/.config/ && cp -r $BASE_DIR/assets/wlogout /home/$SUDO_USER/.config/assets/" "Copy Wlogout config and assets" "yes" "no"
 
